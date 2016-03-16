@@ -11,13 +11,13 @@ var express = require('express'),
 // configuration =========================================================
 
 // set mongoDB
-var db = require('./config/db');
+//var db = require('./config/db');
 
 // set port
 var port = 34300;
 
 //connect to database
-mongoose.connect(db.url);
+//mongoose.connect(db.url);
 
 // parse application/json
 app.use(bodyParser.json());
