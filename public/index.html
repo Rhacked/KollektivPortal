@@ -17,8 +17,11 @@
         <script src="libs/angular-route/angular-route.min.js"></script>
         
         <!-- ANGULAR JS -->
+        
         <script src="js/controllers/MainCtrl.js"></script>
+        <script src="js/controllers/UserCtrl.js"></script>
         <script src="js/appRoutes.js"></script>
+        <script src="js/services/UserService.js"></script>
         <script src="js/app.js"></script>
     </head>
     <body ng-app="kollektiv" ng-controller="MainController">
@@ -35,6 +38,7 @@
                         <!-- LINKS -->
                         <ul class="nav navbar-nav" id="navbar">
                             <li><a href="/film">Filmer</a></li>
+                            <li><a href="/users">Brukere</a></li>
                         </ul>
 
                     </nav>

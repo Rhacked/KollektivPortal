@@ -9,6 +9,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         .when('/film', {
             templateUrl : 'views/film.html',
             controller : 'MainController'
+    })
+        .when('/users', {
+            templateUrl : 'views/users.html',
+            controller : 'UserController'
     });
     
     

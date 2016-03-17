@@ -1,0 +1,26 @@
+<!-- public/views/users.html -->
+<div class="jumbotron text-center">
+    <h1>Ny bruker</h1>
+</div>
+<div id="todo-form" class="row">
+    <div class="col-sm-4 col-sm-offset-4 text-center">
+        <form>
+        <div class="form-group">
+            <input type="text" class="form-control input-md" placeholder="Brukernavn" ng-model="formData.username">
+            <input type="password" class="form-control input-md" placeholder="Passord" ng-model="formData.password">
+            <input type="password" class="form-control input-md" placeholder="Gjenta passord" ng-model="formData.repassword">
+        </div>
+        <button type="submit" class="btn btn-primary btn-md" ng-click="createUser()">Add</button>
+        </form>
+    </div>
+</div>
+
+<div id="user-list" class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <div class="checkbox" ng-repeat="user in users">
+            <label>
+                <input type="checkbox" ng-click="deleteUser(user._id)"> {{ user.username }}
+            </label>
+        </div>
+    </div>
+</div>

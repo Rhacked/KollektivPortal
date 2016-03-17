@@ -17,7 +17,7 @@ var express = require('express'),
 var port = 80;
 
 //connect to database
-//mongoose.connect(db.url);
+mongoose.connect('mongodb://glados:3318adminsen@ds013559.mlab.com:13559/kollektiv_portal');
 
 // parse application/json
 app.use(bodyParser.json());
