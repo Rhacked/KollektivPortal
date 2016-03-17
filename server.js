@@ -14,7 +14,7 @@ var express = require('express'),
 //var db = require('./config/db');
 
 // set port
-var port = 34300;
+var port = 80;
 
 //connect to database
 //mongoose.connect(db.url);
