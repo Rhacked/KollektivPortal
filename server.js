@@ -6,9 +6,13 @@ var express = require('express'),
     mongoose = require('mongoose'),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
-    methodOverride = require('method-override');
+    methodOverride = require('method-override'),
+    passport = require('passport');
 
 // configuration =========================================================
+
+require('./app/models/user');
+require('./config/passport');
 
 // set mongoDB
 //var db = require('./config/db');
@@ -35,6 +39,9 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 
 // set the static files location
 app.use(express.static(__dirname+'/public'));
+
+//init passport
+app.use(passport.initialize());
 
 
 // add routes ============================================================

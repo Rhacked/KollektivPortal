@@ -27,7 +27,29 @@ module.exports = function(app){
             res.json(user);
         })
     });
+    
     // frontend routes ===================================================
+    
+    app.post('/register', function(req, res, next){
+        if(!req.body.username || !req.body.password){
+            return res.status(400).json({message: 'Venligst fyll ut alle felter'});
+        }
+        
+        var user = new User();
+        
+        user.username = req.body.username;
+        user.setPassword(req.body.password);
+        
+        user.save(function(err){
+            if(err){
+                return next(err);
+            }
+            
+            return res.json({
+                token: user.generateJWT()
+            });
+        });
+    });
     
     //root
     app.get('*', function(req, res){

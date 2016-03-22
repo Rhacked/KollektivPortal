@@ -1,17 +1,19 @@
 {
-    "name" : "kollektiv-portal",
-    "description" : "En portal der man kan holde styr på eierskap av inventar, samt få informasjon som regninger som er ubetalte",
-    "version" : "0.0.1",
-    "repository" : {
-        "type" : "git",
-        "url" : "https://github.com/Rhacked/KollektivPortal.git"
-    },
-    "dependencies" : {
-        "express"  : "~4.5.1",
-        "mongoose" : "~3.8.0",
-        "body-parser" : "~1.4.2",
-        "method-override" : "~2.0.2",
-        "morgan" : "~1.2.2"
-        
-    }
+  "name": "kollektiv-portal",
+  "description": "En portal der man kan holde styr på eierskap av inventar, samt få informasjon som regninger som er ubetalte",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rhacked/KollektivPortal.git"
+  },
+  "dependencies": {
+    "body-parser": "~1.4.2",
+    "express": "~4.5.1",
+    "jsonwebtoken": "^5.7.0",
+    "method-override": "~2.0.2",
+    "mongoose": "~3.8.0",
+    "morgan": "~1.2.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
 }

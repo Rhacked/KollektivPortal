@@ -1,3 +1,3 @@
 // public/js/app.js
 
-angular.module('kollektiv', ['ngRoute', 'appRoutes', 'MainCtrl', 'UserCtrl']);
+var app = angular.module('kollektiv', ['ngRoute', 'appRoutes', 'MainCtrl', 'UserCtrl']);

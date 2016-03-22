@@ -1,2 +1,6 @@
 #brand {display: block}
 #navbar { display: block}
+
+.input-group{
+    margin-bottom: 2px;
+}
